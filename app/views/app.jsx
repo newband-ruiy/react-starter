@@ -4,7 +4,6 @@
 
 import React from 'react';
 import Reflux from 'reflux';
-import Footer from '../components/footer.jsx';
 
 import AppStore from '../stores/appStore.jsx';
 import Actions from '../actions/actions.jsx';
