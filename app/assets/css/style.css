@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Helvetica Neue", "Hiragino Sans GB", "Hiragino Sans GB W3", "Lucida Grande", Tahoma, Helvetica, Arial, "WenQuanYi Micro Hei", "Microsoft YaHei", "Heiti SC", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+.hidden {
+    display: none;
+}

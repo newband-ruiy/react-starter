@@ -1,0 +1,42 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "A start kit for reactjs project",
+  "main": "app/main.jsx",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --progress --colors",
+    "build": "webpack --progress --colors --config webpack.production.config.js",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b1uew01f/react-starter.git"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "b1uew01f",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b1uew01f/react-starter/issues"
+  },
+  "homepage": "https://github.com/b1uew01f/react-starter#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "webpack": "^1.12.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.18.0",
+    "file-loader": "^0.8.4",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.3",
+    "reflux": "^0.2.12",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6"
+  }
+}

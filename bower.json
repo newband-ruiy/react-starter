@@ -1,0 +1,27 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/b1uew01f/react-starter",
+  "private": true,
+  "authors": [
+    "b1uew01f"
+  ],
+  "description": "A start kit for reactjs project",
+  "main": "app/main.jsx",
+  "keywords": [
+    "reactjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests",
+    "lib"
+  ],
+  "dependencies": {
+    "zepto": ""
+  }
+}
