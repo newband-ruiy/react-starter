@@ -51,5 +51,5 @@ var config = {
 };
 
 config.addVendor('js', 'zepto', bower_dir + '/zepto/zepto.min.js');
-webpack.config.js
+
 module.exports = config;
