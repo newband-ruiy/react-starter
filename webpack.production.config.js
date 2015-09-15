@@ -19,7 +19,7 @@ var config = {
     },
     entry: {
         app: [
-            './app/main.jsx',
+            './app/main.jsx'
         ],
         vendors: []
     },
@@ -31,7 +31,7 @@ var config = {
     module: {
         noParse: [],
         loaders: [
-            {test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/},
+            {test: /\.jsx$/, loader: 'babel-loader', include: /app/},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=100000'},
             {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
             {test: /\.gif$/, loader: "url-loader?mimetype=image/png"},

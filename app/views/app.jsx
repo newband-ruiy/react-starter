@@ -20,7 +20,6 @@ let App = React.createClass({
     },
 
     componentDidMount() {
-
     },
 
     getInitialState() {
@@ -30,7 +29,9 @@ let App = React.createClass({
     render() {
         return (
             <div className="container">
-                <div>React-Starter</div>
+                <h4>React-Starter</h4>
+
+                <div>A start kit for react project by b1uew01f</div>
             </div>
         );
     }

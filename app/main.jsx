@@ -12,7 +12,7 @@ import App from './views/app.jsx';
 
 function main() {
     React.render(
-        <App />, document.body
+        <App />, document.getElementById('app')
     );
 }
 

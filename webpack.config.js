@@ -19,19 +19,22 @@ var config = {
     },
     entry: {
         app: [
-            './app/main.jsx',
+            'webpack-dev-server/client?http://localhost/',
+            'webpack/hot/only-dev-server',
+            './app/main.jsx'
         ],
         vendors: []
     },
     resolve: {alias: {}},
     output: {
+        filename: 'app.js',
         path: path.resolve(__dirname, 'build'),
-        filename: 'app.js'
+        publicPath: 'http://localhost/build/'
     },
     module: {
         noParse: [],
         loaders: [
-            {test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/},
+            {test: /\.jsx$/, loaders: ['react-hot', 'babel-loader'], include: /app/},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=100000'},
             {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
             {test: /\.gif$/, loader: "url-loader?mimetype=image/png"},
