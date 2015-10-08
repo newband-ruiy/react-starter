@@ -6,7 +6,7 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var bower_dir = path.resolve(__dirname, 'lib');
+var bower_dir = path.resolve(__dirname, 'bower_components');
 var npm_dir = path.resolve(__dirname, 'node_modules');
 
 var config = {
