@@ -26,7 +26,7 @@ var config = {
     resolve: {alias: {}},
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'app.js'
+        filename: '[name].js'
     },
     module: {
         noParse: [],

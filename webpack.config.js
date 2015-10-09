@@ -27,7 +27,7 @@ var config = {
     },
     resolve: {alias: {}},
     output: {
-        filename: 'app.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'build'),
         publicPath: 'http://localhost/build/'
     },
