@@ -8,12 +8,10 @@ import 'normalize.css';
 import './assets/css/style.css';
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 import App from './views/app.jsx';
 
-function main() {
-    React.render(
-        <App />, document.getElementById('app')
-    );
-}
 
-main();
+ReactDOM.render(
+    <App />, document.getElementById('app')
+);
