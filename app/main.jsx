@@ -10,12 +10,13 @@ import './assets/css/style.css';
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route } from 'react-router';
+import createHashHistory from 'history/lib/createHashHistory'
+import RouterConfig from './route.jsx';
 
 import App from './views/app.jsx';
 
 
-render((
-    <Router>
-        <Route path="/" component={App}></Route>
-    </Router>
-), document.getElementById('app'));
+render(
+    <Router routes={RouterConfig} history={createHashHistory()} />,
+    document.getElementById('app')
+);

@@ -5,7 +5,7 @@
 import React from 'react';
 import Reflux from 'reflux';
 
-import AppStore from '../stores/appStore.jsx';
+import AppStore from '../stores/AppStore.jsx';
 import Actions from '../actions/actions.jsx';
 
 let APP_CFG = {};
