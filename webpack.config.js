@@ -5,6 +5,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 var bower_dir = path.resolve(__dirname, 'bower_components');
 var npm_dir = path.resolve(__dirname, 'node_modules');
@@ -17,10 +18,18 @@ var config = {
             this.entry.vendors.push(name);
         }
     },
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+        contentBase: '.',
+        port: 8080
+    },
     entry: {
         app: [
+            'webpack/hot/dev-server',
             'webpack-dev-server/client?http://localhost:8080/',
-            'webpack/hot/only-dev-server',
             './app/main.jsx'
         ],
         vendors: []
@@ -34,7 +43,7 @@ var config = {
     module: {
         noParse: [],
         loaders: [
-            {test: /\.jsx$/, loaders: ['react-hot', 'babel-loader'], include: /app/},
+            {test: /\.jsx$/, loaders: ['babel-loader'], include: /app/},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=100000'},
             {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
             {test: /\.gif$/, loader: "url-loader?mimetype=image/png"},
@@ -47,7 +56,8 @@ var config = {
         ]
     },
     plugins: [
-        new webpack.NoErrorsPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new OpenBrowserPlugin( {url: 'http://localhost'} ),
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
         new ExtractTextPlugin('app.css')
     ]

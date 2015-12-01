@@ -9,7 +9,7 @@
   },
   "plugins": [
   ],
-  "extends": "eslint-config-airbnb",
+  "extends": "",
   "rules": {
     "comma-dangle": 0,
     "no-console": 0,
