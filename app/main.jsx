@@ -8,10 +8,14 @@ import 'normalize.css';
 import './assets/css/style.css';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Router, Route } from 'react-router';
+
 import App from './views/app.jsx';
 
 
-ReactDOM.render(
-    <App />, document.getElementById('app')
-);
+render((
+    <Router>
+        <Route path="/" component={App}></Route>
+    </Router>
+), document.getElementById('app'));

@@ -31,7 +31,7 @@ let App = React.createClass({
             <div className="container">
                 <h4>React-Starter</h4>
 
-                <div>A start kit for react project by b1uew0lf</div>
+                <div>A start kit for react project by ruiy</div>
             </div>
         );
     }
