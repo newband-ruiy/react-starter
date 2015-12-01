@@ -9,7 +9,7 @@
     "build": "webpack --progress --colors",
     "watch": "webpack --progress --colors --watch",
     "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline",
-    "deploy": "webpack --progress --colors --config webpack.production.config.js"
+    "deploy": "NODE_ENV=production webpack --progress --colors --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",

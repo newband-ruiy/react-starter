@@ -56,6 +56,7 @@ var config = {
         ]
     },
     plugins: [
+        new webpack.NoErrorsPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new OpenBrowserPlugin( {url: 'http://localhost'} ),
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),

@@ -44,6 +44,7 @@ var config = {
         ]
     },
     plugins: [
+        new webpack.NoErrorsPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
         new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
